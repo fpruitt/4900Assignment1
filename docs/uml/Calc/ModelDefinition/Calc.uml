@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="94416907-1973-4c28-83ad-ab7072d2b80b"
+  name="Calc" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="8edabc88-6093-40f5-bc2e-31f259131e71">
+      <body>Operator Chosen?</body>
+    </comment>
+    <comment
+      Id="1f0ed9b1-fffc-4c47-8625-b030d4847b60">
+      <body>YES
+</body>
+    </comment>
+    <comment
+      Id="233785c5-48b1-4745-84b7-ed432bd37b2b">
+      <body>NO
+</body>
+    </comment>
+    <comment
+      Id="ab51cef9-5d62-41a0-bebe-d7248e15f693">
+      <body>BEGIN</body>
+    </comment>
+    <comment
+      Id="e98879c1-0816-4f08-918e-8178dfcfb091">
+      <body>Special Math Function?</body>
+    </comment>
+    <comment
+      Id="4b3058c6-6157-4dfe-a3c1-cc9d179210cd">
+      <body>YES</body>
+    </comment>
+    <comment
+      Id="798f5f28-21c6-4c55-8cb6-efa33ab3f423">
+      <body>NO</body>
+    </comment>
+    <comment
+      Id="ebef73a7-e20c-4690-adb2-09d762ed072c">
+      <body>Which Operator?</body>
+    </comment>
+    <comment
+      Id="cd0f8ee2-4f62-499f-873d-819463e9ee2d">
+      <body>Equals button Selected?</body>
+    </comment>
+    <comment
+      Id="b33d86d0-6abf-4a67-a4c8-97774b2d5515">
+      <body>YES</body>
+    </comment>
+    <comment
+      Id="ff5de8dc-bccb-4216-968f-77fea7c72b54">
+      <body>Load , Save, or Clear Button?</body>
+    </comment>
+    <comment
+      Id="1c222379-ee3f-43ec-858a-8bac8a0ba3fb">
+      <body>Load Button</body>
+    </comment>
+    <comment
+      Id="1b328b46-50f4-4d78-8c8d-85952b296490">
+      <body>End</body>
+    </comment>
+    <comment
+      Id="b7e53e3a-e435-44e0-8ed2-cbdd1b2d1efd">
+      <body>Save Button</body>
+    </comment>
+    <comment
+      Id="9104a1d1-f6cf-45f4-841e-497e50edb437">
+      <body>Save, Load, or Del selected?</body>
+    </comment>
+    <comment
+      Id="bd113b34-540f-4b1c-a0c0-3fe541518340">
+      <body>Save Button</body>
+    </comment>
+    <comment
+      Id="1d0b66ad-7e91-46a8-b821-62687b2cafce">
+      <body>Load Button</body>
+    </comment>
+    <comment
+      Id="be9f2b71-9c5b-4096-add3-2fd2ee21261d">
+      <body>Delete</body>
+    </comment>
+    <comment
+      Id="ca96fe75-aeab-4c72-9536-304cf0167ff3">
+      <body>End</body>
+    </comment>
+    <comment
+      Id="2ba4e4cd-8799-4635-aba2-60ae48157ac7">
+      <body>NO</body>
+    </comment>
+    <comment
+      Id="366e9fe4-cc3c-4130-b2b7-32d2835768b2">
+      <body>Clear Button</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="0c03fd73-c07c-40e3-8685-a1c44d7ed33c"
+        name="User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="2eda6e18-4030-44fa-8832-a415705dde7b"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="02e42e77-7aa7-49e1-b819-0421e3323bc8"
+            name="Start"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="842dfdf0-2753-49e4-a2a0-e3fc8ee4de4c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3a338797-9ec0-470a-89b6-340066444610"
+                  LastKnownName="Enter First Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="3a338797-9ec0-470a-89b6-340066444610"
+            name="Enter First Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c9c805d0-c64b-498c-a6c8-e854bd171906"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5ec36f84-59f5-47d0-a83e-d599d9913b5b"
+                  LastKnownName="Operator Chosen?"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="5ec36f84-59f5-47d0-a83e-d599d9913b5b"
+            name="Operator Chosen?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="61e97e3a-417f-47c1-a3da-d632753b9c20"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="83a93fd5-8893-4620-ba31-384623799724"
+                  LastKnownName="Which Operator"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3fc4a616-01d8-48fc-83e7-7e41f63d6d6f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="06f3327d-3fc7-4137-8012-36e50fa791a2"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="83a93fd5-8893-4620-ba31-384623799724"
+            name="Which Operator"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b9e80e5e-76d7-49d7-9b88-39e7f6686dfd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="64deaa7c-e83e-4693-88d5-0e91476f2f40"
+                  LastKnownName="Add"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="39c0aedc-d03f-40c2-a68d-1794fabb6740"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="99109b59-0467-4eeb-ad25-80c29f237416"
+                  LastKnownName="Subtract"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8e4792cc-ef67-4350-b0a4-63b88dc223b8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5c59dda8-a1f5-4f7b-a088-17dedc9bfe2b"
+                  LastKnownName="Multiply"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f02e9842-ded1-40cb-85b1-d145b145a554"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="433276e4-552e-4677-be3b-b28276df59e5"
+                  LastKnownName="Divide"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1e26afb2-aba0-42ef-9bbd-2ab82835bf3a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fc61cb4d-652c-40b4-bcd0-314e9408e80d"
+                  LastKnownName="Power"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="06f3327d-3fc7-4137-8012-36e50fa791a2"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="caecff50-6ede-4021-9264-be39ba9cd22b"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ce1db250-7617-4901-b9c6-f862c4dddd2c"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="93458e33-3d14-43ff-8ecf-c8f4a166e512"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e74a5d61-09f5-4cf9-a54d-dfc19ae9b0e3"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="ce1db250-7617-4901-b9c6-f862c4dddd2c"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9fe0dc67-8782-47e2-9697-5f2b83da310f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e1cd92f3-106d-4c8e-9f14-7d2f34a30b60"
+                  LastKnownName="Retrieve result"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="64deaa7c-e83e-4693-88d5-0e91476f2f40"
+            name="Add"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c8aad169-9135-4bd0-af00-bff276972c69"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d2400481-3737-41b9-860a-d968b1269f59"
+                  LastKnownName="Enter Second Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="99109b59-0467-4eeb-ad25-80c29f237416"
+            name="Subtract"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aaea08a1-12df-490d-8726-cfffeff19307"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="64b6eb5c-ce4f-4b72-bd8d-6e82e4486bdc"
+                  LastKnownName="Enter Second Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5c59dda8-a1f5-4f7b-a088-17dedc9bfe2b"
+            name="Multiply"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f6e305e7-4000-4630-a031-776edb9b6acb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="975d9887-bbfb-4d18-aa4a-9884a81c9345"
+                  LastKnownName="Enter Second Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="433276e4-552e-4677-be3b-b28276df59e5"
+            name="Divide"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e2323834-468c-4047-9fc6-49d87d6a7b23"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b263d7b3-412c-4ca3-b45e-68a5624f26d5"
+                  LastKnownName="Enter Second Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d2400481-3737-41b9-860a-d968b1269f59"
+            name="Enter Second Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d4fd9803-232d-4690-9e88-f4c917556ea3"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="64b6eb5c-ce4f-4b72-bd8d-6e82e4486bdc"
+            name="Enter Second Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="98aafc45-718d-4753-b530-7219db179736"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="975d9887-bbfb-4d18-aa4a-9884a81c9345"
+            name="Enter Second Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e3033053-208e-4403-b31c-0390b2643eb6"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b263d7b3-412c-4ca3-b45e-68a5624f26d5"
+            name="Enter Second Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c508b2c5-4532-44ba-a016-4b61c50bc1c5"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="e74a5d61-09f5-4cf9-a54d-dfc19ae9b0e3"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1112f54c-15a7-4116-a883-756d3adee40f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de91f5a2-9ca8-444f-8ff0-9cd6a9197121"
+                  LastKnownName="Save number1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1d531252-caeb-4b99-a180-7bcfc59706c5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c70151bf-dabd-436a-96cc-6b4d6eea9603"
+                  LastKnownName="Load Saved Number1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1b84d5e5-61b8-48d4-ac4b-20ef3f4386e8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="37fe7ab4-1104-4aa0-84ff-7a81fbd5d3da"
+                  LastKnownName="Edit Entered Digit"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="44cc1466-20dc-49ed-b4da-132ad42200c9"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f58cd0e7-a4fd-4491-8a5b-757235c8ebd0"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="41632b52-fd59-4b84-a414-1e7ebdfe8038"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="00b66fb7-73d1-4270-b5d8-00a8585564be"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c685ce3-d053-4a8c-9898-9cd0eecc1847"
+                  LastKnownName="Retrieve Result"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <joinNode
+            Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="debd49ab-7c26-499b-b949-68d6f088dca0"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="44cc1466-20dc-49ed-b4da-132ad42200c9"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode
+            Id="41632b52-fd59-4b84-a414-1e7ebdfe8038"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="43436641-5ebc-4888-9d35-c1000843eeb8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="466feaef-824a-45c5-91b5-b89a06392f79"
+                  LastKnownName="Load Saved Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a5d59ca6-4026-4b8a-9567-c56d632d3388"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="29eb1136-1a0f-404f-9de4-a9a2df9e18fa"
+                  LastKnownName="Save number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c6a5a12d-2169-4661-9c10-6afb871b281e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d62dbaad-5099-411c-8e06-46dd907a1850"
+                  LastKnownName="Clear Contents"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="466feaef-824a-45c5-91b5-b89a06392f79"
+            name="Load Saved Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="13f716f4-120e-4542-b5dd-6907db185483"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ca24a8af-71cd-41c2-b5cb-4e241b119070"
+            name="Clear Button Selected"
+            isLeaf="false" />
+          <opaqueAction
+            Id="7c685ce3-d053-4a8c-9898-9cd0eecc1847"
+            name="Retrieve Result"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="971a1598-8a2d-4cad-8aac-687b6b1f15b0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ca24a8af-71cd-41c2-b5cb-4e241b119070"
+                  LastKnownName="Clear Button Selected"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="54f5bafb-8662-4e6f-8d61-43efa784a649"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a6d9fde6-00c5-4e33-b7c6-77e8c26e9752"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="a6d9fde6-00c5-4e33-b7c6-77e8c26e9752"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="29eb1136-1a0f-404f-9de4-a9a2df9e18fa"
+            name="Save number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="20c26df3-cec4-4011-bbad-3787c6f37482"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c70151bf-dabd-436a-96cc-6b4d6eea9603"
+            name="Load Saved Number1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="de91f5a2-9ca8-444f-8ff0-9cd6a9197121"
+            name="Save number1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="37fe7ab4-1104-4aa0-84ff-7a81fbd5d3da"
+            name="Edit Entered Digit"
+            isLeaf="false" />
+          <opaqueAction
+            Id="e1cd92f3-106d-4c8e-9f14-7d2f34a30b60"
+            name="Retrieve result"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81eb2473-0466-4a79-8492-9f0030ff8341"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="64633f29-f13f-4111-a93a-be88f1668363"
+                  LastKnownName="Clear Button"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e53fc75f-df35-4e83-8016-58f34c3c9959"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a3156bf4-f17a-40c7-a4f2-61aa5105efd4"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="64633f29-f13f-4111-a93a-be88f1668363"
+            name="Clear Button"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="a3156bf4-f17a-40c7-a4f2-61aa5105efd4"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <opaqueAction
+            Id="fc61cb4d-652c-40b4-bcd0-314e9408e80d"
+            name="Power"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="adab0bec-9b28-4491-8111-d896585727f8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="80bc10df-3e53-4453-809d-c57e640944e7"
+                  LastKnownName="Enter Second Number"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="80bc10df-3e53-4453-809d-c57e640944e7"
+            name="Enter Second Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="41dcc165-a367-4421-9efb-67e6b787b8a5"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab4eb04a-457a-4665-9540-047d6bc11474"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Calc.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d62dbaad-5099-411c-8e06-46dd907a1850"
+            name="Clear Contents"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
